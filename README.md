@@ -42,7 +42,7 @@ If you aren't using conda
 git clone https://github.com/martindurant/dask-tutorial-scipy-2018
 
 # Enter the repository
-cd dsak-tutorial-scipy-2018
+cd dask-tutorial-scipy-2018
 
 # Create a virtualenv
 python3 -m venv .env
