@@ -1,4 +1,4 @@
-name: dask-pycon
+name: dask-scipy
 dependencies:
  - dask
  - dask-ml
