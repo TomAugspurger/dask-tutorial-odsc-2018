@@ -23,7 +23,7 @@ git clone https://github.com/martindurant/dask-tutorial-scipy-2018
 cd dask-tutorial-scipy-2018
 
 # Create the environment
-conda env create -c defaults - c conda-forge
+conda env create
 
 # Activate the environment
 conda activate dask-scipy

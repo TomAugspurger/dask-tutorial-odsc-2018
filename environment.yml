@@ -1,4 +1,7 @@
 name: dask-scipy
+channels:
+ - defaults
+ - conda-forge
 dependencies:
  - dask
  - dask-ml
