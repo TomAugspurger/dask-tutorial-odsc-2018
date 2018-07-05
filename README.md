@@ -75,9 +75,9 @@ you can install.
 Although graphviz and it's python bindings are included in the provided environment, you need extra libraries for it
 to work on your system, and what you need depends on your OS
 
-- for linux, `conda install libiconv pango -c conda forge` should be enough, *or* you can get graphviz from your
+- for linux, `conda install libiconv pango -c conda-forge` should be enough, *or* you can get graphviz from your
 system package manager
-- for OSX, `conda install libiconv pango -c conda forge` should also work, *or* you can install graphviz with 
+- for OSX, `conda install libiconv pango -c conda-forge` should also work, *or* you can install graphviz with 
 brew/macports
 - for windows, you will need to install from https://graphviz.gitlab.io/_pages/Download/Download_windows.html , and
 set your PATH to be able to find the installed executable.
