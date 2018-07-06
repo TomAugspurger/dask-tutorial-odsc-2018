@@ -2,6 +2,11 @@
 
 Materials for the [Dask tutorial at SciPy 2018](https://scipy2018.scipy.org/ehome/index.php?eventid=299527&tabid=711308&cid=2229599&sessionid=21547348&sessionchoice=1&).
 
+Note that if you are attending the tutorial in person, a cluster will be available should your local
+installation fail. We will be all using the shared cloud resources for the later distributed part of the
+tutorial.
+
+
 ## First Time Setup
 
 If you don't have `git` installed, you can download a ZIP copy of the repository using the green button 
@@ -66,8 +71,25 @@ python prep_data.py
 jupyter lab
 ```
 
+### Installing Graphviz
+
+Graphviz is used by Dask to produce graphical representations graphs in the notebook. It is an optional extra that
+you can install.
+
+Although graphviz and it's python bindings are included in the provided environment, you need extra libraries for it
+to work on your system, and what you need depends on your OS
+
+- for linux, you can get graphviz from your
+system package manager, e.g., `apt-get install graphviz`
+- for OSX, you can install graphviz with 
+brew/macports
+- for windows, you will need to install from https://graphviz.gitlab.io/_pages/Download/Download_windows.html ,and
+set your PATH to be able to find the installed executable.
+
+See the [graphviz documentation](https://graphviz.gitlab.io/download/) for further information. 
+
 ## Connect to the Cluster
 
 We have a [pangeo](https://github.com/pangeo-data/pangeo) deployment running that'll provide everyone with their own 
 cluster to try out Dask on some larger problems.
-You can log into the cluster by going to: TBD
+You can log into the cluster by going to: http://35.184.141.138
