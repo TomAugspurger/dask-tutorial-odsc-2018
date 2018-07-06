@@ -38,6 +38,10 @@ python prep_data.py
 
 # Start jupyterlab
 jupyter lab
+
+or
+
+jupyter-lab
 ```
 
 If you aren't using conda
