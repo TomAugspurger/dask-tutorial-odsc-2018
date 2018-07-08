@@ -92,4 +92,4 @@ See the [graphviz documentation](https://graphviz.gitlab.io/download/) for furth
 
 We have a [pangeo](https://github.com/pangeo-data/pangeo) deployment running that'll provide everyone with their own 
 cluster to try out Dask on some larger problems.
-You can log into the cluster by going to: http://35.184.141.138
+You can log into the cluster by going to: http://35.184.182.76/
