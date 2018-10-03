@@ -1,6 +1,7 @@
 from __future__ import print_function
 
 import os
+import argparse
 import numpy as np
 import pandas as pd
 import tarfile
@@ -11,7 +12,16 @@ from glob import glob
 data_dir = 'data'
 
 
-def flights():
+def parse_arguments(args=None):
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-s", "--small", action="store_true", default=False)
+    parser.add_argument("--dataset",
+                        default="all",
+                        choices=['all', 'flights', 'array', 'weather'])
+    return parser.parse_args(args)
+
+
+def flights(small=False):
     flights_raw = os.path.join(data_dir, 'nycflights.tar.gz')
     flightdir = os.path.join(data_dir, 'nycflights')
     jsondir = os.path.join(data_dir, 'flightjson')
@@ -46,20 +56,32 @@ def flights():
     print("** Finished! **")
 
 
-def random_array():
+def random_array(small=False):
     if os.path.exists(os.path.join('data', 'random.hdf5')):
         return
 
     print("Create random data for array exercise")
     import h5py
 
+    if small:
+        stop = 100000
+        step = 1000
+    else:
+        stop = 1000000000
+        step = 1000000
+
     with h5py.File(os.path.join('data', 'random.hdf5')) as f:
-        dset = f.create_dataset('/x', shape=(1000000000,), dtype='f4')
-        for i in range(0, 1000000000, 1000000):
-            dset[i: i + 1000000] = np.random.exponential(size=1000000)
+        dset = f.create_dataset('/x', shape=(stop,), dtype='f4')
+        for i in range(0, stop, step):
+            dset[i: i + step] = np.random.exponential(size=step)
 
 
-def weather(growth=3200):
+def weather(small=False):
+    if small:
+        growth = 400
+    else:
+        growth = 1200
+
     url = 'https://storage.googleapis.com/dask-tutorial-data/weather-small.zip'
     weather_zip = os.path.join('data', 'weather-small.zip')
     weather_small = os.path.join('data', 'weather-small')
@@ -97,17 +119,23 @@ def weather(growth=3200):
         try:
             with h5py.File(out_fn) as f:
                 f.create_dataset('/t2m', data=y, chunks=(500, 500))
-        except:
+        except Exception as e:
+            print(e)
             pass
 
 
-def main():
+def main(args=None):
+    args = parse_arguments()
+
     print("Setting up data directory")
     print("-------------------------")
 
-    flights()
-    random_array()
-    weather()
+    if args.dataset in ("flights", "all"):
+        flights(args.small)
+    elif args.dataset in ("array", "all"):
+        random_array(args.small)
+    else:
+        weather(args.small)
 
     print('Finished!')
 

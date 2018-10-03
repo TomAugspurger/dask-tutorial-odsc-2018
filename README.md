@@ -87,7 +87,7 @@ you need depends on your OS
   system package manager, e.g., `apt-get install graphviz`
 - for OSX, you can install graphviz with  brew/macports
 - for windows, you will need to install from
-  https://graphviz.gitlab.io/_pages/Download/Download_windows.html ,and set your
+  https://graphviz.gitlab.io/_pages/Download/Download_windows.html, and set your
   PATH to be able to find the installed executable.
 
 See the [graphviz documentation](https://graphviz.gitlab.io/download/) for further information. 
