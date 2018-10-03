@@ -1,4 +1,4 @@
-name: dask-scipy
+name: dask-odsc
 channels:
  - defaults
  - conda-forge
