@@ -26,3 +26,4 @@ dependencies:
  - snakeviz=1.0.0
  - gcsfs==0.1.2
  - python-graphviz=0.8.4
+ - nodejs==10.8.0

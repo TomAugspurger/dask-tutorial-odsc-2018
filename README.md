@@ -36,6 +36,9 @@ conda env create
 # Activate the environment
 conda activate dask-odsc
 
+# Install the dask-labextension
+jupyter labextension install dask-labextension
+
 # Download data
 python prep_data.py
 
@@ -66,6 +69,11 @@ source .env/bin/activate
 
 # Install the dependencies
 python -m pip install -r requirements.txt
+
+# Install the dask-labextension
+# Note: this requires npm to be on your PATH
+# just ignore it if this doesn't work
+jupyter labextension install dask-labextension
 
 # Download data
 python prep_data.py
