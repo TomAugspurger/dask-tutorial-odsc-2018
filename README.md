@@ -18,9 +18,9 @@ If you don't have `git` installed, you can download a ZIP copy of the repository
 In this case the file will be called `dask-tutorial-odsc-2018-master`, instead of `dask-tutorial-odsc-2018`.
 Adjust the commands below accordingly.
 
-[Install Miniconda](https://conda.io/miniconda.html) or ensure you have Python 3.6 installed on your system.
+[Install Miniconda](https://conda.io/miniconda.html) or ensure you have Python 3.6+ installed on your system.
 
-```
+```bash
 # Update conda
 conda update conda
 
@@ -34,7 +34,7 @@ cd dask-tutorial-odsc-2018
 conda env create
 
 # Activate the environment
-conda activate dask-scipy
+conda activate dask-odsc
 
 # Download data
 python prep_data.py
@@ -49,7 +49,7 @@ jupyter-lab
 
 If you aren't using conda
 
-```
+```bash
 # Clone the repository, or download the ZIP and decompress
 git clone https://github.com/martindurant/dask-tutorial-odsc-2018
 
