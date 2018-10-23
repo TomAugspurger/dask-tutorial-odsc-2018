@@ -34,7 +34,7 @@ cd dask-tutorial-odsc-2018
 conda env create
 
 # Activate the environment
-conda activate dask-scipy
+conda activate dask-odsc
 
 # Download data
 python prep_data.py
