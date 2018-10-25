@@ -27,3 +27,6 @@ dependencies:
  - gcsfs==0.1.2
  - python-graphviz=0.8.4
  - nodejs==10.8.0
+ - pip:
+   - kubernetes
+   - git+https://github.com/dask/dask-kubernetes.git
