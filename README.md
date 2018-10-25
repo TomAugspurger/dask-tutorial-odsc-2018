@@ -4,8 +4,16 @@ Materials for the [Dask tutorial at ODSC West 2018](https://odsc.com/training/po
 
 The tutorial is split in two parts. For the first part, we'll use the
 environment you created ahead of time on your laptop (see below). Assuming the
-WiFi is working, for the second part everyone will use their own Dask Cluster I
+WiFi is working, for the second part everyone will use their own Dask Cluster we
 set up ahead of time.
+
+If you are actively in the tutorial and ready to use your cluster, press this
+button:
+
+<a href="http://binder.pangeo.io/v2/gh/TomAugspurger/dask-tutorial-odsc-2018/master">
+  <img src="http://binder.pangeo.io/badge.svg"
+       width="500px">
+</a>
 
 If you stumbled across this repository and would like to work through the
 materials on your own, consider the official [Dask
