@@ -20,3 +20,6 @@ scipy
 snakeviz
 gcsfs
 graphviz
+zarr
+kubernetes
+git+https://github.com/dask/dask-kubernetes.git

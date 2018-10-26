@@ -21,7 +21,7 @@ Tutorial](https://github.com/dask/dask-tutorial).
 
 ## First Time Setup
 
-If you don't have `git` installed, you can download a ZIP copy of the repository using the green button 
+If you don't have `git` installed, you can download a ZIP copy of the repository using the green button
 ("Clone or Download"->"Download ZIP") above.
 In this case the file will be called `dask-tutorial-odsc-2018-master`, instead of `dask-tutorial-odsc-2018`.
 Adjust the commands below accordingly.
@@ -58,7 +58,11 @@ or
 jupyter-lab
 ```
 
-If you aren't using conda
+Using python / virtualenv instead of conda. Note that you're required to already
+have `python3` installed and on your PATH before running this. If you want the
+full experience, you should also install [graphviz documentation](https://graphviz.gitlab.io/download/)
+and [nodejs](https://nodejs.org/en/), but those are optional. Don't worry if you can't
+get them installed.
 
 ```bash
 # Clone the repository, or download the ZIP and decompress
@@ -90,26 +94,7 @@ python prep_data.py
 jupyter lab
 ```
 
-### Installing Graphviz
-
-Graphviz is used by Dask to produce graphical representations graphs in the
-notebook. It is an optional extra that you can install.
-
-Although graphviz and it's python bindings are included in the provided
-environment, you need extra libraries for it to work on your system, and what
-you need depends on your OS
-
-- for linux, you can get graphviz from your
-  system package manager, e.g., `apt-get install graphviz`
-- for OSX, you can install graphviz with  brew/macports
-- for windows, you will need to install from
-  https://graphviz.gitlab.io/_pages/Download/Download_windows.html, and set your
-  PATH to be able to find the installed executable.
-
-See the [graphviz documentation](https://graphviz.gitlab.io/download/) for further information. 
-
 ## Connect to the Cluster
 
-We have a [pangeo](https://github.com/pangeo-data/pangeo) deployment running that'll provide everyone with their own 
+We have a [pangeo](https://github.com/pangeo-data/pangeo) deployment running that'll provide everyone with their own
 cluster to try out Dask on some larger problems.
-You can log into the cluster by going to: http://35.226.189.29/
