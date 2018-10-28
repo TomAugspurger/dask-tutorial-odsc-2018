@@ -9,6 +9,7 @@ dependencies:
   - xarray
   - dask
   - distributed
+  - fastparquet
   - gcsfs
   - intake
   - intake-xarray
