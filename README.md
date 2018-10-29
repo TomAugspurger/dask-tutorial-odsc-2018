@@ -48,6 +48,9 @@ conda activate dask-odsc
 jupyter labextension install dask-labextension
 
 # Download data
+# Note: This will download ~40MB of data, and generate ~7GB of data on disk
+# If you're low on disk space, run
+# python prep_data.py --small
 python prep_data.py
 
 # Start jupyterlab
@@ -88,6 +91,9 @@ python -m pip install -r requirements.txt
 jupyter labextension install dask-labextension
 
 # Download data
+# Note: This will download ~40MB of data, and generate ~7GB of data on disk
+# If you're low on disk space, run
+# python prep_data.py --small
 python prep_data.py
 
 # Start jupyterlab

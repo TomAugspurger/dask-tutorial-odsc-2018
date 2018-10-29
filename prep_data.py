@@ -132,9 +132,9 @@ def main(args=None):
 
     if args.dataset in ("flights", "all"):
         flights(args.small)
-    elif args.dataset in ("array", "all"):
+    if args.dataset in ("array", "all"):
         random_array(args.small)
-    else:
+    if args.dataset in ("weather", "all"):
         weather(args.small)
 
     print('Finished!')
