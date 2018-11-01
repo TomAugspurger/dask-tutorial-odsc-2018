@@ -33,7 +33,7 @@ Adjust the commands below accordingly.
 conda update conda
 
 # Clone the repository, or download the ZIP and decompress
-git clone https://github.com/martindurant/dask-tutorial-odsc-2018
+git clone https://github.com/TomAugspurger/dask-tutorial-odsc-2018
 
 # Enter the repository
 cd dask-tutorial-odsc-2018
@@ -69,7 +69,7 @@ get them installed.
 
 ```bash
 # Clone the repository, or download the ZIP and decompress
-git clone https://github.com/martindurant/dask-tutorial-odsc-2018
+git clone https://github.com/TomAugspurger/dask-tutorial-odsc-2018
 
 # Enter the repository
 cd dask-tutorial-odsc-2018
