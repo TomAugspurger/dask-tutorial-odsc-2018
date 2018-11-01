@@ -56,9 +56,12 @@ python prep_data.py
 # Start jupyterlab
 jupyter lab
 
-or
+# or
 
 jupyter-lab
+
+# or Jupyter notebook
+jupyter notebook
 ```
 
 Using python / virtualenv instead of conda. Note that you're required to already
@@ -98,6 +101,9 @@ python prep_data.py
 
 # Start jupyterlab
 jupyter lab
+
+# or Jupyter notebook
+jupyter notebook
 ```
 
 ## Connect to the Cluster
