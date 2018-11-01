@@ -7,14 +7,6 @@ environment you created ahead of time on your laptop (see below). Assuming the
 WiFi is working, for the second part everyone will use their own Dask Cluster we
 set up ahead of time.
 
-If you are actively in the tutorial and ready to use your cluster, press this
-button:
-
-<a href="http://binder.pangeo.io/v2/gh/TomAugspurger/dask-tutorial-odsc-2018/master">
-  <img src="http://binder.pangeo.io/badge.svg"
-       width="500px">
-</a>
-
 If you stumbled across this repository and would like to work through the
 materials on your own, consider the official [Dask
 Tutorial](https://github.com/dask/dask-tutorial).
@@ -110,3 +102,11 @@ jupyter notebook
 
 We have a [pangeo](https://github.com/pangeo-data/pangeo) deployment running that'll provide everyone with their own
 cluster to try out Dask on some larger problems.
+
+If you are actively in the tutorial and ready to use your cluster, press this
+button:
+
+<a href="http://binder.pangeo.io/v2/gh/TomAugspurger/dask-tutorial-odsc-2018/master">
+  <img src="http://binder.pangeo.io/badge.svg"
+       width="500px">
+</a>
